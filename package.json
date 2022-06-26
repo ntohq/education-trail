@@ -1,0 +1,13 @@
+{
+  "name": "education-path",
+  "version": "1.0.0",
+  "description": "Education path is an open-source web app that helps students track their progress in their classes and their GPA, but ultimately their success. ",
+  "main": "index.js",
+  "repository": "https://github.com/ntohq/education-path.git",
+  "author": "Wesley Ford <wes@wesdev.pro>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true
+}

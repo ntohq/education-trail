@@ -1,0 +1,8 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Wesley Ford <wes@wesdev.pro>",
+  "license": "MIT",
+  "private": true
+}
