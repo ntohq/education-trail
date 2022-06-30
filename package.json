@@ -9,5 +9,8 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "start": "yarn workspaces server start"
+  },
   "private": true
 }
