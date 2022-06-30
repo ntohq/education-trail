@@ -3,12 +3,13 @@ import express from 'express'
 dotenv.config()
 const test = process.env.HELLO_WORLD
 const app = express()
-const port =  process.env.PORT || 8080
+
+app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send(test)
+    res.send({"myMessage": test})
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+app.listen(process.env.PORT || 8080, () => {
+    console.log("The example app is running")
 })
