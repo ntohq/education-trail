@@ -11,6 +11,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(process.env.PORT || 8080, () => {
-    const port = server.address().port;
-    console.log(`Express is working on port ${port}`);
+    console.log("education-path-server:\nStatus: Runnning")
 })
