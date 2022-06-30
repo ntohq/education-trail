@@ -6,7 +6,9 @@ const app = express()
 
 app.use(express.json())
 
+// Listen at root endpoint
 app.get('/', (req, res) => {
+    // Return json 
     res.send({"myMessage": test})
 })
 
