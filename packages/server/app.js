@@ -11,5 +11,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(process.env.PORT || 8080, () => {
-    console.log("The example app is running")
+    const port = server.address().port;
+    console.log(`Express is working on port ${port}`);
 })
