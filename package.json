@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspaces server start"
+    "start": "yarn workspace server start"
   },
   "private": true
 }
