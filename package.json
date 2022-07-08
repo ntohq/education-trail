@@ -12,5 +12,8 @@
   "scripts": {
     "start": "yarn workspace server start"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "sass-loader": "10.1.1"
+  }
 }
