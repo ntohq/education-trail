@@ -14,6 +14,9 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
+  // Customize the progress-bar color
+  loading: { color: '#fff' },
+  
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/scss/main.scss'],
 
@@ -29,6 +32,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -43,6 +47,21 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
+  },
+  buefy: {
+    defaultIconPack: 'fas',
+    defaultIconComponent: 'FontAwesomeIcon',
+    materialDesignIcons: false,
+  },
+
+  fontawesome: {
+    icons: {
+      solid: [
+        'faChartLine',
+        'faGear',
+        'faUserGraduate',
+      ],
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
