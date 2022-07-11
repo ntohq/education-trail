@@ -17,7 +17,7 @@
                         <b-select placeholder="Select a degree"></b-select>
                     </b-field>
                     <b-field label="GPA">
-                        <b-input type="number" pattern="^[1-9]\d*(\.\d+)?$" max="4.0" min="0.0" step=".1" placeholder="4.0"></b-input>
+                        <b-slider :max="4.0" :min="0.0" step=".1"></b-slider>
                     </b-field>
                     <b-field label="Credits Earned">
                         <b-slider :max="360" rounded></b-slider>
