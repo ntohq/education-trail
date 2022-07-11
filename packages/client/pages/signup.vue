@@ -17,8 +17,7 @@
                         <b-select placeholder="Select a degree"></b-select>
                     </b-field>
                     <b-field label="GPA">
-                        <b-input type="number" pattern="^[1-9]\d*(\.\d+)?$" max="4.0" min="0.0" step=".1"
-                            placeholder="4.0"></b-input>
+                        <b-input type="number" pattern="^[1-9]\d*(\.\d+)?$" max="4.0" min="0.0" step=".1" placeholder="4.0"></b-input>
                     </b-field>
                     <b-field label="Credits Earned">
                         <b-slider :max="360" rounded></b-slider>
@@ -62,7 +61,6 @@ export default {
 }
 
 // See https://vue-loader.vuejs.org/guide/scoped-css.html#child-component-root-elements
-
 
 .link-container {
     text-align: center;
