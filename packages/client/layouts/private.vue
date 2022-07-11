@@ -9,7 +9,7 @@
           <b-menu-item icon="user-graduate" class="has-text-centered"></b-menu-item>
           <b-menu-item icon="chart-line"    class="has-text-centered"></b-menu-item>
         </b-menu-list>
-        <b-menu-list style="margin-top: auto">
+        <b-menu-list>
           <b-menu-item icon="gear" class="has-text-centered"></b-menu-item>
         </b-menu-list>
         

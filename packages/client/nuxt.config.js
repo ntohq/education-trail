@@ -57,9 +57,18 @@ export default {
   fontawesome: {
     icons: {
       solid: [
+        'faAngleLeft',
+        'faAngleRight',
         'faChartLine',
+        'faCircleCheck',
         'faGear',
+        'faLink',
+        'faPaintBrush',
         'faUserGraduate',
+      ],
+      brands: [
+        'faApple',
+        'faGoogle',
       ],
     },
   },
