@@ -1,5 +1,5 @@
 <template>
   <section class="section">
-    <nuxt/>
+    <nuxt />
   </section>
 </template>

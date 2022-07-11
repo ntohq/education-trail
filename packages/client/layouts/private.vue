@@ -1,22 +1,37 @@
 <template>
   <div class="container-layout sidebar-page">
-    <b-sidebar position="static" mobile="reduce" :reduce="true" type="is-dark" open>
+    <b-sidebar
+      position="static"
+      mobile="reduce"
+      :reduce="true"
+      type="is-dark"
+      open
+    >
       <b-menu class="is-custom-mobile">
         <div class="block has-background-primary p-3 mt-1">
-          <img src="@/assets/buefy.png" class="is-rounded" alt="Education Path Logo"/>
+          <img
+            src="@/assets/buefy.png"
+            class="is-rounded"
+            alt="Education Path Logo"
+          />
         </div>
         <b-menu-list>
-          <b-menu-item icon="user-graduate" class="has-text-centered"></b-menu-item>
-          <b-menu-item icon="chart-line"    class="has-text-centered"></b-menu-item>
+          <b-menu-item
+            icon="user-graduate"
+            class="has-text-centered"
+          ></b-menu-item>
+          <b-menu-item
+            icon="chart-line"
+            class="has-text-centered"
+          ></b-menu-item>
         </b-menu-list>
         <b-menu-list>
           <b-menu-item icon="gear" class="has-text-centered"></b-menu-item>
         </b-menu-list>
-        
       </b-menu>
     </b-sidebar>
     <div>
-      <nuxt/>
+      <nuxt />
     </div>
   </div>
 </template>
