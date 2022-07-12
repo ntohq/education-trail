@@ -68,7 +68,7 @@
           </b-field>
         </div>
       </b-step-item>
-      <b-step-item class="fa-sm" label="Finalize" icon="circle-check">
+      <b-step-item class="fa-sm" label="Finalize" icon="check-circle">
         <div></div>
       </b-step-item>
     </b-steps>
