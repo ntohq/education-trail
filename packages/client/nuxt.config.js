@@ -68,6 +68,7 @@ export default {
       ],
       brands: ['faApple', 'faGoogle'],
     },
+    addCss: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
