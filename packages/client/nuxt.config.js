@@ -18,10 +18,13 @@ export default {
   loading: { color: '#fff' },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/scss/main.scss'],
+  css: [
+    '~/assets/scss/main.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/fontawesome.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -32,7 +35,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/fontawesome',
+    // '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -68,7 +71,6 @@ export default {
       ],
       brands: ['faApple', 'faGoogle'],
     },
-    addCss: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
