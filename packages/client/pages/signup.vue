@@ -3,14 +3,14 @@
     <b-steps>
       <b-step-item
         style="display: block"
+        class="fa-sm"
         label="Link Account"
         icon="link"
         visible
       >
         <div class="link-container">
           <b-button
-            class="is-light"
-            size="is-medium"
+            class="is-light fa-sm"
             icon-left="google"
             icon-pack="fab"
             rounded
@@ -18,8 +18,7 @@
             Signup with Google
           </b-button>
           <b-button
-            class="is-light"
-            size="is-medium"
+            class="is-light fa-sm"
             icon-left="apple"
             icon-pack="fab"
             rounded
@@ -29,10 +28,9 @@
         </div>
       </b-step-item>
       <b-step-item
-        class="customization-container"
+        class="customization-container fa-2xs"
         label="Customize"
         icon="paint-brush"
-        icon-size="is-small"
       >
         <div class="customization-form">
           <b-field label="Degree (defualt: other)">
@@ -70,7 +68,7 @@
           </b-field>
         </div>
       </b-step-item>
-      <b-step-item label="Finalize" icon="circle-check">
+      <b-step-item class="fa-sm" label="Finalize" icon="circle-check">
         <div></div>
       </b-step-item>
     </b-steps>
