@@ -134,8 +134,6 @@ export default {
 
 .link-container {
   text-align: center;
-  display: flex;
-  flex-direction: column;
   padding-top: 10%;
 
   ::v-deep .b-button {
