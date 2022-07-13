@@ -48,13 +48,14 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
-  buefy: {
+  'nuxt-buefy': {
     defaultIconPack: 'fas',
-    defaultIconComponent: 'FontAwesomeIcon',
+    defaultIconComponent: '@nuxtjs/fontawesome',
     materialDesignIcons: false,
   },
 
   fontawesome: {
+    suffix: true,
     icons: {
       solid: [
         'faAngleLeft',
@@ -63,7 +64,7 @@ export default {
         'faCheckCircle',
         'faCog',
         'faLink',
-        'faPaintBrush',
+        'faBrush',
         'faUserGraduate',
       ],
       brands: ['faApple', 'faGoogle'],

@@ -17,7 +17,7 @@
         </div>
         <b-menu-list>
           <b-menu-item
-            icon="user-graduate"
+            icon="fas user-graduate"
             class="has-text-centered"
           ></b-menu-item>
           <b-menu-item

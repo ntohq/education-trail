@@ -6,13 +6,13 @@
         class="fa-sm"
         label="Link Account"
         icon="link"
-        visible
+        :visible="true"
       >
         <div class="link-container">
           <b-button
             class="is-light fa-sm"
             icon-left="google"
-            icon-pack="fab"
+            pack="fab"
             rounded
           >
             Signup with Google
@@ -20,7 +20,7 @@
           <b-button
             class="is-light fa-sm"
             icon-left="apple"
-            icon-pack="fab"
+            pack="fab"
             rounded
           >
             Signup with Apple
@@ -28,9 +28,11 @@
         </div>
       </b-step-item>
       <b-step-item
-        class="customization-container fa-2xs"
+        class="customization-container"
+        size="is-small"
         label="Customize"
-        icon="paint-brush"
+        icon="brush"
+        pack="fas"
       >
         <div class="customization-form">
           <b-field label="Degree (defualt: other)">
@@ -68,7 +70,7 @@
           </b-field>
         </div>
       </b-step-item>
-      <b-step-item class="fa-sm" label="Finalize" icon="check-circle">
+      <b-step-item size="is-small" label="Finalize" icon="check-circle">
         <div></div>
       </b-step-item>
     </b-steps>
@@ -119,6 +121,7 @@ export default {
   padding-top: 10%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 
   ::v-deep nav {
     flex: 1;
@@ -134,6 +137,9 @@ export default {
 
 .link-container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding-top: 10%;
 
   ::v-deep .b-button {
@@ -150,6 +156,9 @@ export default {
 
   ::v-deep .field {
     max-width: 50%;
+    @media (max-width: 769px) {
+      max-width: 100%;
+    }
   }
 }
 </style>
