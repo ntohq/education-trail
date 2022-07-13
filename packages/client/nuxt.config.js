@@ -38,7 +38,15 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
+    [
+      'nuxt-buefy',
+      {
+        defaultIconPack: 'fas',
+        defaultIconComponent: 'FontAwesomeIcon',
+        materialDesignIcons: 'false',
+        css: false
+      },
+    ],
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
@@ -48,14 +56,9 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
-  'nuxt-buefy': {
-    defaultIconPack: 'fas',
-    defaultIconComponent: '@nuxtjs/fontawesome',
-    materialDesignIcons: false,
-  },
 
   fontawesome: {
-    suffix: true,
+    css: false,
     icons: {
       solid: [
         'faAngleLeft',
@@ -64,7 +67,7 @@ export default {
         'faCheckCircle',
         'faCog',
         'faLink',
-        'faBrush',
+        'faPaintBrush',
         'faUserGraduate',
       ],
       brands: ['faApple', 'faGoogle'],

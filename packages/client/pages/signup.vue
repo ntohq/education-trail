@@ -12,17 +12,12 @@
           <b-button
             class="is-light fa-sm"
             icon-left="google"
-            pack="fab"
+            icon-pack="fab"
             rounded
           >
             Signup with Google
           </b-button>
-          <b-button
-            class="is-light fa-sm"
-            icon-left="apple"
-            pack="fab"
-            rounded
-          >
+          <b-button class="is-light fa-sm" icon-left="apple" icon-pack="fab" rounded>
             Signup with Apple
           </b-button>
         </div>
