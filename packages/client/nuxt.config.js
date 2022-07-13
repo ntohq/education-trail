@@ -32,7 +32,25 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/fontawesome',
+    [
+      '@nuxtjs/fontawesome',
+      {
+        css: true,
+        icons: {
+          solid: [
+            'faAngleLeft',
+            'faAngleRight',
+            'faChartLine',
+            'faCheckCircle',
+            'faCog',
+            'faLink',
+            'faPaintBrush',
+            'faUserGraduate',
+          ],
+          brands: ['faApple', 'faGoogle'],
+        },
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,7 +62,8 @@ export default {
         defaultIconPack: 'fas',
         defaultIconComponent: 'FontAwesomeIcon',
         materialDesignIcons: 'false',
-        css: false
+        defaultIconPrev: 'angle-left',
+        defaultIconNext: 'angle-right'
       },
     ],
     // https://go.nuxtjs.dev/axios
@@ -56,24 +75,6 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
-
-  fontawesome: {
-    css: false,
-    icons: {
-      solid: [
-        'faAngleLeft',
-        'faAngleRight',
-        'faChartLine',
-        'faCheckCircle',
-        'faCog',
-        'faLink',
-        'faPaintBrush',
-        'faUserGraduate',
-      ],
-      brands: ['faApple', 'faGoogle'],
-    },
-  },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   target: 'static',
