@@ -161,4 +161,18 @@ export default {
     }
   }
 }
+
+.svg-inline--fa {
+  vertical-align: -0.125em;
+}
+
+fa-icon svg {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+}
+
+fa-icon .fa-2x{
+  font-size: 2em;
+}
 </style>
