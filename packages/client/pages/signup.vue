@@ -17,7 +17,12 @@
           >
             Signup with Google
           </b-button>
-          <b-button class="is-light fa-sm" icon-left="apple" icon-pack="fab" rounded>
+          <b-button
+            class="is-light fa-sm"
+            icon-left="apple"
+            icon-pack="fab"
+            rounded
+          >
             Signup with Apple
           </b-button>
         </div>
@@ -26,7 +31,7 @@
         class="customization-container"
         size="is-small"
         label="Customize"
-        icon="brush"
+        icon="paint-brush"
         pack="fas"
       >
         <div class="customization-form">
