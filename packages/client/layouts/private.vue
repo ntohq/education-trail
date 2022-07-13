@@ -7,7 +7,7 @@
       type="is-dark"
       open
     >
-      <b-menu class="is-custom-mobile">
+      <b-menu class="is-custom-mobile .menu-container">
         <div class="block has-background-primary p-3 mt-1">
           <img
             src="@/assets/buefy.png"
@@ -15,7 +15,7 @@
             alt="Education Path Logo"
           />
         </div>
-        <b-menu-list>
+        <b-menu-list class="main-menu">
           <b-menu-item
             icon="user-graduate"
             class="has-text-centered"
@@ -49,6 +49,16 @@
 }
 
 .sidebar-content {
+  flex: 1;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-menu {
   flex: 1;
 }
 </style>
