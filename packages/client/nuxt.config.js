@@ -1,14 +1,19 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'client',
+    title: 'The education trail',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Education trail is an open-source web app that helps students track their progress in their classes and their GPA, but ultimately their success.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -18,7 +23,10 @@ export default {
   loading: { color: '#fff' },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/scss/main.scss'],
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    '~/assets/scss/main.scss',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -32,40 +40,32 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    [
-      '@nuxtjs/fontawesome',
-      {
-        css: true,
-        icons: {
-          solid: [
-            'faAngleLeft',
-            'faAngleRight',
-            'faChartLine',
-            'faCheckCircle',
-            'faCog',
-            'faLink',
-            'faPaintBrush',
-            'faUserGraduate',
-          ],
-          brands: ['faApple', 'faGoogle'],
-        },
-      },
-    ],
+    // [
+    //   '@nuxtjs/fontawesome',
+    //   {
+    //     css: true,
+    //     icons: {
+    //       solid: [
+    //         'faAngleLeft',
+    //         'faAngleRight',
+    //         'faChartLine',
+    //         'faCheckCircle',
+    //         'faCog',
+    //         'faLink',
+    //         'faPaintBrush',
+    //         'faSchool',
+    //         'faUserGraduate',
+    //       ],
+    //       brands: ['faApple', 'faGoogle'],
+    //     },
+    //   },
+    // ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
-    [
-      'nuxt-buefy',
-      {
-        defaultIconPack: 'fas',
-        defaultIconComponent: 'FontAwesomeIcon',
-        materialDesignIcons: 'false',
-        defaultIconPrev: 'angle-left',
-        defaultIconNext: 'angle-right'
-      },
-    ],
+    'nuxt-buefy',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],

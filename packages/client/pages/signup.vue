@@ -5,14 +5,13 @@
         style="display: block"
         class="fa-sm"
         label="Link Account"
-        icon="link"
+        icon="link-variant"
         :visible="true"
       >
         <div class="link-container">
           <b-button
             class="is-light fa-sm"
             icon-left="google"
-            icon-pack="fab"
             rounded
           >
             Signup with Google
@@ -20,7 +19,6 @@
           <b-button
             class="is-light fa-sm"
             icon-left="apple"
-            icon-pack="fab"
             rounded
           >
             Signup with Apple
@@ -30,9 +28,8 @@
       <b-step-item
         class="customization-container"
         size="is-small"
+        icon="palette"
         label="Customize"
-        icon="paint-brush"
-        pack="fas"
       >
         <div class="customization-form">
           <b-field label="Degree (defualt: other)">
@@ -143,7 +140,7 @@ export default {
   padding-top: 10%;
 
   ::v-deep .b-button {
-    margin: auto;
+    margin: 10px;
     border: solid black 2px !important;
   }
 }
@@ -160,19 +157,5 @@ export default {
       max-width: 100%;
     }
   }
-}
-
-.svg-inline--fa {
-  vertical-align: -0.125em;
-}
-
-fa-icon svg {
-  display: inline-block;
-  font-size: inherit;
-  height: 1em;
-}
-
-fa-icon .fa-2x{
-  font-size: 2em;
 }
 </style>

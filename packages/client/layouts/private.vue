@@ -17,9 +17,10 @@
         </div>
         <b-menu-list class="main-menu">
           <b-menu-item
-            icon="user-graduate"
+            icon="account-school"
             class="has-text-centered"
           ></b-menu-item>
+          <b-menu-item icon="school" class="has-text-centered"></b-menu-item>
           <b-menu-item
             icon="chart-line"
             class="has-text-centered"
@@ -52,10 +53,13 @@
   flex: 1;
 }
 
-.menu-container {
+.menu {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  ::v-deep ul:nth-child(2) {
+    flex: 2;
+  }
 }
 
 .main-menu {
