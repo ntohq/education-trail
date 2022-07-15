@@ -13,14 +13,13 @@
             class="is-light fa-sm"
             icon-left="google"
             rounded
+            @click="
+              googleModule ? (googleModule = false) : (googleModule = true)
+            "
           >
             Signup with Google
           </b-button>
-          <b-button
-            class="is-light fa-sm"
-            icon-left="apple"
-            rounded
-          >
+          <b-button class="is-light fa-sm" icon-left="apple" rounded>
             Signup with Apple
           </b-button>
         </div>
@@ -71,6 +70,13 @@
         <div></div>
       </b-step-item>
     </b-steps>
+    <b-modal v-model="googleModule" scroll="keep">
+      <div class="has-backgound-white box signup-module">
+        <div style="flex: 1"></div>
+        <div style="flex: 2"></div>
+        <div style="flex: 1"></div>
+      </div>
+    </b-modal>
   </div>
 </template>
 
@@ -82,6 +88,7 @@ export default {
       creditsEarned: 0,
       creditsRequired: 120,
       creditsLeft: 120,
+      googleModule: false,
     }
   },
   head: {
@@ -157,5 +164,11 @@ export default {
       max-width: 100%;
     }
   }
+}
+
+.signup-module {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
 }
 </style>

@@ -23,10 +23,7 @@ export default {
   loading: { color: '#fff' },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    '~/assets/scss/main.scss',
-  ],
+  css: ['~/assets/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -40,26 +37,6 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    // [
-    //   '@nuxtjs/fontawesome',
-    //   {
-    //     css: true,
-    //     icons: {
-    //       solid: [
-    //         'faAngleLeft',
-    //         'faAngleRight',
-    //         'faChartLine',
-    //         'faCheckCircle',
-    //         'faCog',
-    //         'faLink',
-    //         'faPaintBrush',
-    //         'faSchool',
-    //         'faUserGraduate',
-    //       ],
-    //       brands: ['faApple', 'faGoogle'],
-    //     },
-    //   },
-    // ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
