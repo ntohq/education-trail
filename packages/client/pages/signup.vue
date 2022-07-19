@@ -10,7 +10,7 @@
       >
         <div class="link-container">
           <b-button
-            class="is-light fa-sm"
+            class="is-light"
             icon-left="google"
             rounded
             @click="
@@ -19,8 +19,14 @@
           >
             Signup with Google
           </b-button>
-          <b-button class="is-light fa-sm" icon-left="apple" rounded>
-            Signup with Apple
+          <b-button class="is-light" icon-left="facebook" rounded>
+            Signup with Facebook
+          </b-button>
+          <b-button class="is-light" icon-left="discord" rounded>
+            Signup with Discord
+          </b-button>
+          <b-button class="is-light" icon-left="github" rounded>
+            Signup with Github
           </b-button>
         </div>
       </b-step-item>

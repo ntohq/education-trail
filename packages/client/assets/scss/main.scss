@@ -15,6 +15,10 @@ h6 {
   font-family: $family-sans-serif;
 }
 
+$sidebar-backgroundr: #5c5d5d;
+$menu-item-color: white;
+$sidebar-width: 8vw;
+
 // Import Bulma and Buefy styles
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
