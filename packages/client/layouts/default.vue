@@ -2,6 +2,7 @@
   <section class="section">
     <topNav/>
     <nuxt />
+    <foot />
   </section>
 </template>
 

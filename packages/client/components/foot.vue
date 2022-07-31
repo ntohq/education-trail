@@ -19,10 +19,9 @@
     <hr class='is-hidden-touch'>
     <div class="container">
       <div class="columns is-desktop has-text-left-touch">
-        <b-collapse class="column" :open="isHidden" aria-id="contentIdForA11y3">
           <div slot="trigger" slot-scope="props" class="card-header is-hidden-desktop is-shadowless" role="button" aria-controls="fc1">
             <p class="card-header-title">
-              Product 
+             
             </p>
             <a class="card-header-icon">
               <b-icon
@@ -30,21 +29,18 @@
               </b-icon>
             </a>
           </div>
-          <h1 class='is-hidden-touch'><strong>Product</strong></h1>
+          <h1 class='is-hidden-touch'><strong></strong></h1>
           <div class="card-content">
             <ul class="content">
-              <li><a target="_blank" href="https://codepen.io/jettaz">Create Websites</a></li>
+              <!-- <li><a target="_blank" href="https://codepen.io/jettaz">Create Websites</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Secure Cloud Hosting</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Engage Your Audience</a></li>
-              <li><a target="_blank" href="https://codepen.io/jettaz">Website Support</a></li>
+              <li><a target="_blank" href="https://codepen.io/jettaz">Website Support</a></li> -->
             </ul>
           </div>
-        </b-collapse>
-
-        <b-collapse class="column" :open="isHidden" aria-id="contentIdForA11y3">
           <div slot="trigger" slot-scope="props" class="card-header is-hidden-desktop is-shadowless" role="button" aria-controls="fc2">
             <p class="card-header-title">
-              Company
+              
             </p>
             <a class="card-header-icon is-hidden-desktop">
               <b-icon
@@ -52,21 +48,19 @@
               </b-icon>
             </a>
           </div>
-          <h1 class='is-hidden-touch'><strong>Company</strong></h1>
+          <h1 class='is-hidden-touch'><strong></strong></h1>
           <div class="card-content">
             <ul class="content">
-              <li><a target="_blank" href="https://codepen.io/jettaz">About</a></li>
+              <!-- <li><a target="_blank" href="https://codepen.io/jettaz">About</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Careers</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Support</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Pricing</a></li>
-              <li><a target="_blank" href="https://codepen.io/jettaz">FAQ</a></li>
+              <li><a target="_blank" href="https://codepen.io/jettaz">FAQ</a></li> -->
             </ul>
           </div>
-        </b-collapse>
-        <b-collapse class="column" :open="isHidden" aria-id="contentIdForA11y3">
           <div slot="trigger" slot-scope="props" class="card-header is-hidden-desktop is-shadowless" role="button" aria-controls="fc3">
             <p class="card-header-title">
-              Resources
+              
             </p>
             <a class="card-header-icon is-hidden-desktop">
               <b-icon
@@ -74,11 +68,9 @@
               </b-icon>
             </a>
           </div>
-        </b-collapse>
-        <b-collapse class="column" :open="isHidden" aria-id="contentIdForA11y3">
           <div slot="trigger" slot-scope="props" class="card-header is-hidden-desktop is-shadowless" role="button" aria-controls="fc4">
             <p class="card-header-title">
-              Get Help
+              
             </p>
             <a class="card-header-icon is-hidden-desktop">
               <b-icon
@@ -86,18 +78,17 @@
               </b-icon>
             </a>
           </div>
-          <h1 class='is-hidden-touch'><strong>Get Help</strong></h1>
+          <h1 class='is-hidden-touch'><strong></strong></h1>
           <div class="card-content">
-            <ul class="content">
+            <!-- <ul class="content">
               <li><a target="_blank" href="https://codepen.io/jettaz" >Help Center</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Contact Us</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Privacy Policy</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Terms</a></li>
               <li><a target="_blank" href="https://codepen.io/jettaz">Login</a></li>
               <li><a target="_blank" href="#top">Top of the Page</a></li>
-            </ul>
+            </ul> -->
           </div>
-        </b-collapse>
       </div>
     </div>
     <hr class='is-hidden-touch'>

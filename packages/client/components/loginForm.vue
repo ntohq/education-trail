@@ -5,7 +5,7 @@
       class="is-light"
       icon-left="google"
       rounded
-      @click=""
+      @click="stop"
     >
       Signup with Google
     </b-button>
