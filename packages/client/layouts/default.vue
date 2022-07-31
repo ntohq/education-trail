@@ -13,15 +13,9 @@ export default {
 
 <template>
   <section class="section">
-<<<<<<< Updated upstream
     <top-nav />
     <side-nav />
     <nuxt />
-=======
-<h1>Hello World</h1>
-    <nuxt/>
-    <click />
->>>>>>> Stashed changes
     <foot />
   </section>
 </template>
