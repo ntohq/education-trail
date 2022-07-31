@@ -2,6 +2,7 @@
 <div id="foot" class="section">
   <!-- Site footer -->
     <footer class="site-footer">
+<<<<<<< Updated upstream
           <b-div class="col-md-8 col-sm-6 col-xs-12">
              <b-p class="copyright-text">
             </b-p>
@@ -109,6 +110,20 @@
     </div>
   </footer>
 </div>
+=======
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">NTOHQ</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
+              <li><font-awesome-icon class="has-text-info ff-ff" :icon="['fab', 'instagram']" /></li>   
+            </ul>
+          </div>
+>>>>>>> Stashed changes
 </footer>
 <style lang="scss" scoped>
    footer{
@@ -121,6 +136,7 @@
     padding: 3rem 1.5rem 6rem;
     color: #2d2d2a;
    }
+<<<<<<< Updated upstream
 
    @media all and (max-width: 1023px) {
   .card-content {
@@ -132,15 +148,21 @@
       0 0 0 1px rgba(10, 10, 10, 0.02);
   }
 }
+=======
+>>>>>>> Stashed changes
    </style>
     </div>
 </template>
 
 <script>
+<<<<<<< Updated upstream
 export default {
     auth: false,
 };
 
 
 
+=======
+export default {};
+>>>>>>> Stashed changes
 </script>
