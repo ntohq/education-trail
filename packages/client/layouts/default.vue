@@ -1,27 +1,17 @@
-<script>
-import click from '../components/click'
-import foot from '../components/foot'
-
-export default {
-  components: {
-    click,
-    foot
-  }
-}
-
-</script>
-
 <template>
   <section class="section">
-    <top-nav />
-    <side-nav />
+    <topNav/>
     <nuxt />
-    <foot />
   </section>
 </template>
 
 <script>
+import topNav from '@/components/top-nav.vue'
+
 export default {
+  components: {
+    topNav,
+},
   auth: false,
 }
 </script>
