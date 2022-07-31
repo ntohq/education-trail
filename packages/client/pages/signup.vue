@@ -25,9 +25,6 @@
           <b-button class="is-light" icon-left="discord" rounded>
             Signup with Discord
           </b-button>
-          <b-button class="is-light" icon-left="github" rounded>
-            Signup with Github
-          </b-button>
         </div>
       </b-step-item>
       <b-step-item
@@ -88,6 +85,7 @@
 
 <script>
 export default {
+  auth: false,
   layout: 'signupLayout',
   data() {
     return {

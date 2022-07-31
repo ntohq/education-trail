@@ -45,6 +45,7 @@ export default {
     'nuxt-buefy',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -52,6 +53,14 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
+
+  auth: {
+  },
+
+  router: {
+    middleware: ['auth'],
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   target: 'static',

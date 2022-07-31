@@ -10,9 +10,7 @@
           />
         </div>
         <b-menu-list class="main-menu">
-          <b-tooltip 
-            label="Home"
-          >
+          <b-tooltip label="Home">
             <b-menu-item
               icon="school"
               size="is-medium"
@@ -84,7 +82,6 @@
     flex: 2;
     text-align: center;
   }
-  
 }
 
 .main-menu {
