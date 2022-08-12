@@ -50,7 +50,7 @@ export default {
     },
     
     setLoginTab() {
-      this.activeTab = (this.$route.query.show_signup === 'true') ? 'signup' : undefined
+      this.activeTab = (this.$route.query.show_signup === 'true') ? 'signup' : 'login'
     }
   }
 }
