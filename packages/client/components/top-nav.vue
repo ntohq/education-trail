@@ -20,10 +20,10 @@
     <template #end>
       <b-navbar-item tag="div">
         <div class="buttons">
-          <a class="button is-primary">
+          <NuxtLink to="/login?show_signup=true" class="button is-primary">
             <strong>Sign up</strong>
-          </a>
-          <a class="button is-light"> Log in </a>
+          </NuxtLink>
+          <NuxtLink to="/login" class="button is-light"> Log in </NuxtLink>
         </div>
       </b-navbar-item>
     </template>

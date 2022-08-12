@@ -4,7 +4,7 @@
       <img src="@/assets/buefy.png" />
     </div>
     <b-tabs v-model="activeTab" position="is-centered" type="is-boxed">
-      <b-tab-item id="login" label="Login" icon="login">
+      <b-tab-item value="login" label="Login" icon="login">
         <div class="button-container">
           <b-button class="is-light" icon-left="google" rounded>
             Google
@@ -14,7 +14,7 @@
           </b-button>
         </div>
       </b-tab-item>
-      <b-tab-item id="signup" label="Signup" icon="form-select">
+      <b-tab-item value="signup" label="Signup" icon="form-select">
         <div class="button-container">
           <b-button class="is-light" icon-left="google" rounded>
             Google
@@ -36,7 +36,7 @@
 export default {
   data() {
     return {
-      activeTab: 'login'
+      activeTab: undefined
     }
   },
 
@@ -50,7 +50,7 @@ export default {
     },
     
     setLoginTab() {
-      this.activeTab = (this.$route.query.show_signup === 'true') ? 'signup' : 'login'
+      this.activeTab = (this.$route.query.show_signup === 'true') ? 'signup' : undefined
     }
   }
 }
