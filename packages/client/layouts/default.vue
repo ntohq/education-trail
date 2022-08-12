@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <topNav/>
+    <topNav />
     <nuxt />
     <foot />
   </section>
@@ -12,7 +12,7 @@ import topNav from '@/components/top-nav.vue'
 export default {
   components: {
     topNav,
-},
+  },
   auth: false,
 }
 </script>

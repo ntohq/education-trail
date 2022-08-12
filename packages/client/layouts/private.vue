@@ -58,6 +58,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  auth: false,
+}
+</script>
+
 <style lang="scss" scoped>
 .container-layout {
   min-height: 100vh;

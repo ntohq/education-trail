@@ -13,7 +13,7 @@
 export default {
   layout: 'private',
   head: {
-    title: 'Welcome - Education Path',
+    title: 'Dashboard - Education Path',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -24,6 +24,7 @@ export default {
       },
     ],
   },
+  auth: false,
 }
 </script>
 
