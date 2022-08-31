@@ -6,7 +6,12 @@
     <b-tabs v-model="activeTab" position="is-centered" type="is-boxed">
       <b-tab-item value="login" label="Login" icon="login">
         <div class="button-container">
-          <b-button class="is-light" icon-left="google" rounded>
+          <b-button
+            class="is-light"
+            icon-left="google"
+            rounded
+            @click="loginWithGoogle()"
+          >
             Google
           </b-button>
           <b-button class="is-light" icon-left="facebook" rounded>
@@ -36,7 +41,7 @@
 export default {
   data() {
     return {
-      activeTab: undefined
+      activeTab: undefined,
     }
   },
 
@@ -48,11 +53,12 @@ export default {
     loginWithGoogle() {
       this.$auth.loginWith('google')
     },
-    
+
     setLoginTab() {
-      this.activeTab = (this.$route.query.show_signup === 'true') ? 'signup' : 'login'
-    }
-  }
+      this.activeTab =
+        this.$route.query.show_signup === 'true' ? 'signup' : 'login'
+    },
+  },
 }
 </script>
 

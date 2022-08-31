@@ -33,10 +33,9 @@ const UserClasses = new mongoose.Schema([
 ])
 
 const UserSchema = new mongoose.Schema({
-    oAuthId: Number,
+    oAuthId: String,
     full_name: String,
     nick_name: {
-        required: true,
         type: String
     },
     email: String,
@@ -51,4 +50,4 @@ const UserSchema = new mongoose.Schema({
     classes: UserClasses
 })
 
-export default mongoose.model('User', UserSchema)
+export default mongoose.model('education-data', UserSchema, 'education-data')

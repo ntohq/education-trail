@@ -4,7 +4,7 @@
       <b-menu class="is-custom-mobile .menu-container">
         <div class="block has-background-primary p-3 mt-1">
           <img
-            src="@/assets/buefy.png"
+            :src="$auth.user.picture"
             class="is-rounded"
             alt="Education Path Logo"
           />
@@ -60,7 +60,7 @@
 
 <script>
 export default {
-  auth: false,
+  auth: true,
 }
 </script>
 

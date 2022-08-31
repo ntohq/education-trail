@@ -54,7 +54,21 @@ export default {
     baseURL: '/',
   },
 
-  auth: {},
+  auth: {
+    strategies: {
+      google: {
+        clientId: process.env.GOOGLECLIENTID,
+        responseType: 'code',
+        endpoints: {
+          token: 'http://localhost:4040/v1/user/auth',
+          userInfo: 'http://localhost:4040/v1/user/ps-data',
+        },
+        scope: ['profile', 'email'],
+        codeChallengeMethod: '',
+        accessType: 'online',
+      },
+    },
+  },
 
   router: {
     middleware: ['auth'],

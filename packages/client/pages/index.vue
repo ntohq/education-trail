@@ -1,6 +1,6 @@
 <template>
   <section>
-    <p>Help</p>
+    <p>help</p>
   </section>
 </template>
 
