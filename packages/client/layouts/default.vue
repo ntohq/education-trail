@@ -1,18 +1,5 @@
 <template>
-  <section class="section">
-    <topNav />
-    <nuxt />
-    <foot />
-  </section>
+    <div>
+        <slot />
+    </div>
 </template>
-
-<script>
-import topNav from '@/components/top-nav.vue'
-
-export default {
-  components: {
-    topNav,
-  },
-  auth: false,
-}
-</script>
