@@ -10,11 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.9"
+    "nuxt": "3.0.0-rc.9",
+    "sass": "^1.54.8"
   },
   "dependencies": {
     "@nuxtjs/auth-next": "5.0.0-1648802546.c9880dc",
     "@nuxtjs/axios": "5.13.6",
-    "@oruga-ui/oruga": "0.5.5"
+    "@oruga-ui/oruga-next": "^0.5.5"
   }
 }
