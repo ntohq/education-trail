@@ -1,7 +1,7 @@
 <template>
   <section class="has-text-centered box login-form-cotainer">
     <div class="name-brand-image">
-      <img src="@/assets/buefy.png" />
+      <img src="@/assets/education_trail_emblem.png" />
     </div>
     <b-tabs v-model="activeTab" position="is-centered" type="is-boxed">
       <b-tab-item value="login" label="Login" icon="login">
