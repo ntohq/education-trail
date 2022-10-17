@@ -42,10 +42,11 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/auth-next',
+    'nuxt-buefy',
+    '@nuxt/content'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -71,7 +72,7 @@ export default {
   },
 
   router: {
-    middleware: ['auth'],
+
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

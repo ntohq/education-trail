@@ -4,7 +4,7 @@
       <b-menu class="is-custom-mobile .menu-container">
         <div class="block has-background-primary p-3 mt-1">
           <img
-            :src="$auth.user.picture"
+            src="@/assets/education_trail_emblem.png"
             class="is-rounded"
             alt="Education Path Logo"
           />
@@ -60,7 +60,7 @@
 
 <script>
 export default {
-  auth: true,
+  auth: false,
 }
 </script>
 

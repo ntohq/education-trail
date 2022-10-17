@@ -23,8 +23,8 @@ export default {
         content: '',
       },
     ],
+    auth: false,
   },
-  auth: false,
 }
 </script>
 

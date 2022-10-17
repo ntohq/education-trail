@@ -2,20 +2,20 @@
   <div id="foot" class="section">
     <!-- Site footer -->
     <footer class="site-footer">
-      <b-div class="col-md-8 col-sm-6 col-xs-12">
-        <b-p class="copyright-text"> </b-p>
-      </b-div>
-      <b-div class="col-md-4 col-sm-6 col-xs-12">
-        <b-ul class="social-icons">
-          <b-li><font-awesome-icon icon="fa-brands fa-instagram" /></b-li>
-          <b-li
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text"> </p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
+          <li
             ><font-awesome-icon
               class="has-text-info ff-ff"
               :icon="['fab', 'instagram']"
-          /></b-li>
-          <b-li></b-li>
-        </b-ul>
-      </b-div>
+          /></li>
+          <li></li>
+        </ul>
+      </div>
       <div id="app">
         <footer class="has-text-centered">
           <hr />
@@ -31,8 +31,8 @@
               >
                 <p class="card-header-title"></p>
                 <a class="card-header-icon">
-                  <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-                  </b-icon>
+                  <icon :icon="props.open ? 'menu-down' : 'menu-up'">
+                  </icon>
                 </a>
               </div>
               <h1 class="is-hidden-touch"><strong></strong></h1>
@@ -53,8 +53,8 @@
               >
                 <p class="card-header-title"></p>
                 <a class="card-header-icon is-hidden-desktop">
-                  <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-                  </b-icon>
+                  <icon :icon="props.open ? 'menu-down' : 'menu-up'">
+                  </icon>
                 </a>
               </div>
               <h1 class="is-hidden-touch"><strong></strong></h1>
@@ -76,8 +76,8 @@
               >
                 <p class="card-header-title"></p>
                 <a class="card-header-icon is-hidden-desktop">
-                  <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-                  </b-icon>
+                  <icon :icon="props.open ? 'menu-down' : 'menu-up'">
+                  </icon>
                 </a>
               </div>
               <div
@@ -89,8 +89,8 @@
               >
                 <p class="card-header-title"></p>
                 <a class="card-header-icon is-hidden-desktop">
-                  <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-                  </b-icon>
+                  <icon :icon="props.open ? 'menu-down' : 'menu-up'">
+                  </icon>
                 </a>
               </div>
               <h1 class="is-hidden-touch"><strong></strong></h1>
@@ -109,10 +109,10 @@
           <hr class="is-hidden-touch" />
           <br class="is-hidden-desktop" />
           <div class="title is-6">
-            <b-p class="copyright-text"
+            <p class="copyright-text"
               >Copyright &copy; 2022 All Rights Reserved by
-              <b-a href="#">NTOHQ</b-a>.
-            </b-p>
+              <a href="#">NTOHQ</a>.
+            </p>
           </div>
         </footer>
       </div>
