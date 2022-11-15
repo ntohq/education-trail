@@ -15,3 +15,7 @@ $button-background-color: $-purple;
 
 /* change to @use when possible */
 @import '@oruga-ui/theme-bulma/dist/scss/bulma';
+
+.navbar-item button {
+    border: none;
+}
