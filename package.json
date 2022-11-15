@@ -7,7 +7,7 @@
   "author": "Wesley Ford <wes@wesdev.pro>",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "src/*"
   ],
   "scripts": {
     "start": "yarn workspace server start"
