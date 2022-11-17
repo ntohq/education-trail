@@ -2,7 +2,7 @@
   <nav :class="{ 'is-transformed': !showNavbar }" class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
-        <img src="@/assets/education_trail_emblem.png" width="112" height="100">
+        <img src="@/assets/education_trail_emblem.png" width="112" height="112">
       </a>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-content"
@@ -47,15 +47,32 @@ export default {
   -moz-box-shadow: 7px 4px 38px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 7px 4px 38px 0px rgba(0, 0, 0, 0.5);
 
-  &.is-transformed {
-    transform: translate3d(0, -100%, 0);
+  // &.is-transformed {
+  //   transform: translate3d(0, -100%, 0);
+  // }
+
+}
+
+@media (min-width: calc(960px + (2 * 0.75rem))) {
+  a.navbar-item {
+    &:after {
+      content: '';
+      height: 1.5px;
+      width: 0;
+      background-color: #bd8f21;
+      position: absolute;
+      left: calc(50%);
+      bottom: 10%;
+      -webkit-transition: width 300ms linear;
+      transition: width 300ms linear;
+    }
+    &:hover:after {
+      width: calc(90% - 30%);
+      left: 20%;
+    }
   }
-
 }
 
-p {
-  color: red;
-}
 
 .navbar-item img {
   max-height: 64px;

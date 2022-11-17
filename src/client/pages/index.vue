@@ -1,9 +1,10 @@
 <template>
     <div>
-        <section class="section">
+        <HomeHero></HomeHero>
+        <!-- <section class="section">
             <p>Help</p>
             <o-checkbox>Basic</o-checkbox>
-        </section>
+        </section> -->
         <OurTeam></OurTeam>
     </div>
 </template>

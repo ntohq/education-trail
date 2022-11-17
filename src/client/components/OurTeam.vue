@@ -47,25 +47,24 @@ export default {
                 {
                     name: "Wesley Ford",
                     git_user: "wesdevpro",
-                    git_link: "https://github.com/wesdevpro",
+                    git_link: "https://www.instagram.com/wesdevpro",
                     git_role: "Lead Dev",
                     photo: "https://avatars.githubusercontent.com/u/11604664?v=4",
                     contactInfo: {
                         email: "mailto:wes@wesdev.pro",
-                        instagram: "https://www.instagram.com/wesdevpro/"
                     }
                 },
                 {
                     name: "Michael Mercadante",
                     git_user: "mvmdesigner",
-                    git_link: "https://github.com/mvmdesigner",
+                    git_link: "https://www.instagram.com/mvmdesigner",
                     git_role: "Graphic Designer",
                     photo: "https://avatars.githubusercontent.com/u/104705539?v=4",
                 },
                 {
                     name: "Danny Small",
-                    git_user: "dansmalr1527r",
-                    git_link: "https://github.com/dansmalr1527r",
+                    git_user: "dansmalr1527",
+                    git_link: "https://github.com/dansmalr1527",
                     git_role: "Full Stack Developer",
                     photo: "https://avatars.githubusercontent.com/u/108247048?v=4",
                 }
