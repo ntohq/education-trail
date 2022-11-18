@@ -12,9 +12,6 @@ export default defineNuxtConfig({
 
         }
     },
-    modules: [
-        '@vueuse/nuxt'
-    ],
     css: [
         '@/assets/main.scss'
     ]

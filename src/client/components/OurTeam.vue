@@ -1,7 +1,8 @@
 <template>
     <section class="section" id="our-team">
-        <div class="columns is-desktop">
-            <div class="card column" v-for="members in teamMembers">
+        <h1 class="title is-1 has-text-centered">Our Team</h1>
+        <div class="team-container">
+            <div class="card" v-for="members in teamMembers">
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
@@ -10,9 +11,7 @@
                             </figure>
                         </div>
                         <div class="media-content">
-                            <p class="title is-4">
-                                {{ members.name }} - <i>{{ members.git_role }}</i>
-                            </p>
+                            <p class="title is-4">{{ members.name }} - <i>{{ members.git_role }}</i></p>
                             <p class="subtitle is-6">
                                 <a :href="members.git_link">
                                     @{{ members.git_user }}
@@ -21,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <div 
+                <!-- <div 
                     class="content" 
                     v-if="typeof members.contactInfo !== 'undefined'"
                 >
@@ -33,11 +32,19 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 </template>
+
+<style lang="scss" scoped>
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 1rem;
+}
+</style>
 
 <script>
 export default {
@@ -67,6 +74,13 @@ export default {
                     git_link: "https://github.com/dansmalr1527",
                     git_role: "Full Stack Developer",
                     photo: "https://avatars.githubusercontent.com/u/108247048?v=4",
+                },
+                {
+                    name: "Daniel York",
+                    git_user: "Dan-York01",
+                    git_link: "https://github.com/Dan-York01",
+                    git_role: "Backend Developer",
+                    photo: "https://avatars.githubusercontent.com/u/110703781?v=4",
                 }
             ]
         }

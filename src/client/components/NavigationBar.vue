@@ -1,9 +1,9 @@
 <template>
   <nav :class="{ 'is-transformed': !showNavbar }" class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="@/assets/education_trail_emblem.png" width="112" height="112">
-      </a>
+      <NuxtLink class="navbar-item" to="/">
+        <img class="image" src="@/assets/education_trail_emblem.png" width="64" height="64">
+      </NuxtLink>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-content"
         @click="isActive = !isActive">
@@ -15,7 +15,7 @@
 
     <div id="navbar-content" class="navbar-menu" :class="{ 'is-active': isActive }">
       <div class="navbar-start">
-        <NuxtLink class="navbar-item" v-for="navRoutes in navigationRoutes" :to="navRoutes.link">
+        <NuxtLink class="navbar-item navlink" v-for="navRoutes in navigationRoutes" :to="navRoutes.link">
           {{ navRoutes.name }}
         </NuxtLink>
       </div>
@@ -54,7 +54,7 @@ export default {
 }
 
 @media (min-width: calc(960px + (2 * 0.75rem))) {
-  a.navbar-item {
+  a.navbar-item.navlink{
     &:after {
       content: '';
       height: 1.5px;
