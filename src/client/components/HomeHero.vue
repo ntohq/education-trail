@@ -29,8 +29,6 @@
             margin: auto;
 
             @media (min-width: calc(960px + (2 * 0.75rem))) {
-    
-                h1, p {
                     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
                     transition: text-decoration-color 600ms;
                 
@@ -38,7 +36,6 @@
                         text-decoration-color: rgb(150, 187, 202);
                         text-underline-offset: 0.4em;
                     }
-                }
             }
         }
     }

@@ -59,7 +59,7 @@ export default {
       content: '';
       height: 1.5px;
       width: 0;
-      background-color: #bd8f21;
+      background-color: #598d58;
       position: absolute;
       left: calc(50%);
       bottom: 10%;
