@@ -15,12 +15,12 @@
                         name: 'Home'
                     },
                     {
-                        link: '/#our-team',
-                        name: 'Our Team'
-                    },
-                    {
                         link: '/about',
                         name: 'About Us'
+                    },
+                    {
+                        link: '/news',
+                        name: 'News'
                     }
                 ]
             }

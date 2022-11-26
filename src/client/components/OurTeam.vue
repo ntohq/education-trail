@@ -1,5 +1,5 @@
 <template>
-    <section class="section" id="our-team">
+    <section class="section is-medium">
         <h1 class="title is-1 has-text-centered">Our Team</h1>
         <div class="team-container">
             <div class="card" v-for="members in teamMembers">
@@ -11,7 +11,7 @@
                             </figure>
                         </div>
                         <div class="media-content">
-                            <p class="title is-4">{{ members.name }} - <i>{{ members.git_role }}</i></p>
+                            <p class="title is-4" style="font-size: initial;"><span class="line">{{ members.name }}</span> - <i>{{ members.git_role }}</i></p>
                             <p class="subtitle is-6">
                                 <a :href="members.git_link">
                                     @{{ members.git_user }}
@@ -20,19 +20,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div 
-                    class="content" 
-                    v-if="typeof members.contactInfo !== 'undefined'"
-                >
-                    <h6 class="title is-6 has-text-centered">Contact</h6>
-                    <ul>
-                        <li v-for="(clink, ckey) in members.contactInfo">
-                            <a :href="clink">
-                                {{ ckey }}
-                            </a>
-                        </li>
-                    </ul>
-                </div> -->
             </div>
         </div>
     </section>
@@ -41,8 +28,23 @@
 <style lang="scss" scoped>
 .team-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    gap: 1rem;
+    gap: 1.75rem;
+}
+
+
+.media-content {
+    overflow: hidden;
+}
+
+span.line {
+  display: inline-block;
+  font-size: initial
+}
+
+@media (min-width: 50em) { 
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 </style>
 

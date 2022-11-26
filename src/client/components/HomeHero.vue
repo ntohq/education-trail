@@ -3,6 +3,7 @@
         <div class="hero-body has-text-white has-text-centered">
             <div>
                 <h1 class="title is-1 has-text-white home-hero-title">Education Trail</h1>
+                <hr>
                 <p>The path to keep track of your education grades</p>
             </div>
         </div>
@@ -27,16 +28,6 @@
 
         div {
             margin: auto;
-
-            @media (min-width: calc(960px + (2 * 0.75rem))) {
-                    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-                    transition: text-decoration-color 600ms;
-                
-                    &:hover {
-                        text-decoration-color: rgb(150, 187, 202);
-                        text-underline-offset: 0.4em;
-                    }
-            }
         }
     }
 }

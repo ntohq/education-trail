@@ -46,11 +46,6 @@ export default {
   -webkit-box-shadow: 7px 4px 38px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 7px 4px 38px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 7px 4px 38px 0px rgba(0, 0, 0, 0.5);
-
-  // &.is-transformed {
-  //   transform: translate3d(0, -100%, 0);
-  // }
-
 }
 
 @media (min-width: calc(960px + (2 * 0.75rem))) {
