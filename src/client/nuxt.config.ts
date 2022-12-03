@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     },
     modules: ['@nuxt/content'],
     content: {
-        base: '/_content',
         watch: {
             ws: {
               port: 4000,
@@ -35,5 +34,6 @@ export default defineNuxtConfig({
     css: [
         '@/assets/styles/core.scss',
         '@mdi/font/scss/materialdesignicons.scss'
-    ]
+    ],
+    target: 'static',
 })

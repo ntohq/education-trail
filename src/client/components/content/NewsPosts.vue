@@ -1,8 +1,12 @@
+<script setup>
+const { data: posts } = await useAsyncData('navigation', () => queryContent('').where({ title: { $ne: 'News Hub'}}).only(['_path', 'title', 'clentcher', 'img', 'category', 'postedAt']).find())
+</script>
+
 <template>
     <section class="section has-text-centered">
        <div class="level">
           <div class="level-item has-text-centered news-title">
-             <h2 class="title is-2 blog-title" icon="newspaper">Extra, Extra, Read all about it!</h2>
+             <h2 class="title is-2 blog-title" icon="newspaper"><slot /></h2>
              <p>the latest about the trail!</p>
           </div>
        </div>
@@ -25,7 +29,7 @@
                 <div>
                    <o-button
                       tag="router-link"
-                      :to="'/blog/' + listItems.slug"
+                      :to="listItems._path"
                       type="is-link"
                       class="button"
                    >
@@ -37,20 +41,6 @@
        </div>
     </section>
  </template>
- 
- <script>
- export default {
-    async asyncData({ params }) {
-       const posts = (
-          await queryContent('posts', params.slug)
-       )
-          .slice()
-          .sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt))
-       /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
-       return { posts }
-    },
- }
- </script>
 
 <style lang="scss">
 .news-title {
