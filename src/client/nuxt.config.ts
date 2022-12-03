@@ -42,4 +42,5 @@ export default defineNuxtConfig({
         '@mdi/font/scss/materialdesignicons.scss'
     ],
     target: 'static',
+    ssr: false
 })
