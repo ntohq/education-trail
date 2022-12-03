@@ -41,9 +41,5 @@ export default defineNuxtConfig({
         '@/assets/styles/core.scss',
         '@mdi/font/scss/materialdesignicons.scss'
     ],
-    target: 'static',
-    ssr: false,
-    nitro: {
-        preset: 'service-worker'
-    }
+    target: 'static'
 })
