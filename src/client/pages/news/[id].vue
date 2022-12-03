@@ -1,6 +1,8 @@
 <template>
    <main>
-      <ContentDoc>
+      <ContentDoc
+      :path="`/news/${$route.params.id}`"
+      >
       <template #not-found>
          <h2>News slug ({{ $route.params.id }}) not found</h2>
       </template>
