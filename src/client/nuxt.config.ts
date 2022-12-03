@@ -7,8 +7,8 @@ export default defineNuxtConfig({
             charset: 'utf-16',
             viewport: 'width=500, initial-scale=1',
             meta: [
-                { name: 'keywords',    content: 'Education, Trail, Grade Manager, College, Grade Analytics' },
-                { name: 'author',      content: 'ntohq developers @ntohqdev <github@ntohq.dev>' }
+                { name: 'keywords', content: 'Education, Trail, Grade Manager, College, Grade Analytics' },
+                { name: 'author', content: 'ntohq developers @ntohqdev <github@ntohq.dev>' }
             ]
         }
     },
@@ -16,10 +16,10 @@ export default defineNuxtConfig({
     content: {
         watch: {
             ws: {
-              port: 4000,
-              showUrl: true
+                port: 4000,
+                showUrl: true
             }
-        }      
+        }
     },
     vite: {
         css: {
@@ -29,6 +29,12 @@ export default defineNuxtConfig({
                 }
             }
 
+        }
+    },
+    vue: {
+        config: {
+            productionTip: false,
+            devtools: true
         }
     },
     css: [

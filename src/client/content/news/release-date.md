@@ -7,7 +7,7 @@ img: "https://images.pexels.com/photos/355906/pexels-photo-355906.jpeg?cs=srgb&d
 ---
 
 <div class="section">
-    <img src="@/assets/education_trail_emblem.png" style="height: 150px" />
+    <img src="/assets/education_trail_emblem.png" style="height: 150px" />
     <p>Please excuse our dust. There is a bear on the trail🐻</p>
     <p>We are still working on the education trail!</p>
     <br>
