@@ -13,7 +13,14 @@ export default defineNuxtConfig({
         }
     },
     modules: ['@nuxt/content'],
-    routes: ['/news/**'],
+    nitro: {
+        prerender: {
+            crawlLinks: false,
+            routes: [
+                '/news/**'
+            ]
+        },
+    },
     content: {
         watch: {
             ws: {
