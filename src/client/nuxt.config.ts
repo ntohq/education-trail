@@ -13,6 +13,7 @@ export default defineNuxtConfig({
         }
     },
     modules: ['@nuxt/content'],
+    routes: ['/news/**'],
     content: {
         watch: {
             ws: {
