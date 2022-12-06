@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   repo: ntohq/education-path
-  branch: dev
+  branch: main
 
 media_folder: public/img
 public_folder: /img
