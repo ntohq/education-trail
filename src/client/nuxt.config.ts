@@ -17,11 +17,11 @@ export default defineNuxtConfig({
         prerender: {
             crawlLinks: true,
             routes: [
-                '/news/**'
+                '/news/release-date'
             ]
         },
         routes: {
-            '/news/**': { swr: true }
+            '/news/release-date': { swr: true }
         }
     },
     content: {
