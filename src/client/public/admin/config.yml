@@ -18,7 +18,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Pexel Image', name: 'img', widget: 'image' }
-      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - { label: 'Publish Date', name: 'postedAt', widget: 'date' }
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Description', name: 'clentcher', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
