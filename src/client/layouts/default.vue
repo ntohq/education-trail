@@ -1,14 +1,29 @@
 <template>
-  <main>
-    <Nuxt />
-  </main>
+    <div>
+        <NavigationBar  :navigationRoutes="navigationLinks"/>
+        <slot />
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'DefaultLayout',
-  head: {
-    title: 'Construction in Progress',
-  },
-}
+    export default {
+        data() {
+            return {
+                navigationLinks: [
+                    {
+                        link: '/',
+                        name: 'Home'
+                    },
+                    {
+                        link: '/about',
+                        name: 'About Us'
+                    },
+                    {
+                        link: '/news',
+                        name: 'News'
+                    }
+                ]
+            }
+        }
+    }
 </script>

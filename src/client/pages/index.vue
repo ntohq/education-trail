@@ -1,15 +1,16 @@
 <template>
-  <div class="section">
-    <img src="@/assets/education_trail_emblem.png" style="height: 150px" />
-    <p>Please excuse our dust. There is a bear on the trail🐻</p>
-    <p>We are still working on the education trail!</p>
-    <br>
-    <p>Find us on <a href="https://www.instagram.com/educationtrail/">instagram</a></p>
-  </div>
+    <div class="layout-container">
+        <HomeHero></HomeHero>
+        <OurTeam></OurTeam>
+        <Pricing></Pricing>
+    </div>
 </template>
 
-<script>
-export default {
-  name: 'IndexPage',
-}
+<script setup>
+useHead({
+    title: 'Education Trail - Home',
+    meta: [
+        { name: 'description', content: 'The home of the education trail! The Education trail is a powerful tool that makes grade analytics simple-created to help anyone to reach their education goals.' },
+    ]
+})
 </script>
