@@ -27,14 +27,14 @@ const { data: posts } = await useAsyncData('navigation', () => queryContent('').
                    </h6>
                 </div>
                 <div>
-                   <o-button
+                   <NuxtLink
                       tag="router-link"
                       :to="listItems._path"
                       type="is-link"
                       class="button"
                    >
                       Read More
-                   </o-button>
+                   </NuxtLink>
                 </div>
              </div>
           </div>
