@@ -1,10 +1,6 @@
 <template>
     <div class="layout-container">
         <HomeHero></HomeHero>
-        <!-- <section class="section">
-            <p>Help</p>
-            <o-checkbox>Basic</o-checkbox>
-        </section> -->
         <OurTeam></OurTeam>
         <Pricing></Pricing>
     </div>
@@ -18,6 +14,3 @@ useHead({
     ]
 })
 </script>
-
-<style lang="scss">
-</style>
