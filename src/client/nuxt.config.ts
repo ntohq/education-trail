@@ -13,17 +13,6 @@ export default defineNuxtConfig({
         }
     },
     modules: ['@nuxt/content'],
-    nitro: {
-        prerender: {
-            crawlLinks: true,
-            routes: [
-                '/news/release-date'
-            ]
-        },
-        routes: {
-            '/news/release-date': { swr: true }
-        }
-    },
     content: {
         watch: {
             ws: {
