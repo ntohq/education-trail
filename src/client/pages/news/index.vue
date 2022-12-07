@@ -1,5 +1,5 @@
 <script setup>
-const { data: posts } = await useAsyncData('navigation', () => queryContent('').only(['_path', 'title', 'clentcher', 'img', 'category', 'postedAt']).find())
+const { data: posts } = await useAsyncData('navigation', () => queryContent('').only(['_path', 'title', 'clentcher', 'img', 'category', 'postedAt']).sort({ 'postedAt': -1 }).find())
 </script>
 
 <template>
