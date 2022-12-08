@@ -2,6 +2,7 @@
     <div>
         <NavigationBar  :navigationRoutes="navigationLinks"/>
         <slot />
+        <NavigationFooter/>
     </div>
 </template>
 
