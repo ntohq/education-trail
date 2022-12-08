@@ -43,32 +43,36 @@
 </template>
 
 <style lang="scss" scoped>
-    .pricing-container {
-        display: grid;
-        grid-auto-rows: 1fr;
-        margin: auto;
-        gap: 10%;
-        @media (min-width: calc(960px + (2 * 0.75rem))) {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        div.pricing-child {
+    section {
+        margin: 3rem 3rem;
+        .pricing-container {
+            display: grid;
+            grid-template-rows: minmax(0, 1fr);
+            grid-auto-rows: minmax(0, 1fr);
             margin: auto;
-            text-align: center;
-            height: 100%;
-            width: 100%;
-            .icon-container {
-                border: black solid 2px;
-                padding: 10px;
-                width: fit-content;
-                margin: auto;
-                border-radius: 20%;
+            gap: 10%;
+            @media (min-width: calc(960px + (2 * 0.75rem))) {
+                grid-template-columns: repeat(3, 1fr);
             }
 
-            ul {
-                list-style: disc inside;
+            div.pricing-child {
                 margin: auto;
-                text-align: left;
+                text-align: center;
+                padding: 2.5rem 0 2.5rem 0;
+                width: 100%;
+                .icon-container {
+                    border: black solid 2px;
+                    padding: 10px;
+                    width: fit-content;
+                    margin: auto;
+                    border-radius: 20%;
+                }
+
+                ul {
+                    list-style: disc inside;
+                    margin: auto;
+                    text-align: left;
+                }
             }
         }
     }

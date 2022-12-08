@@ -1,5 +1,5 @@
 <script setup>
-const { data: posts } = await useAsyncData('navigation', () => queryContent('').only(['_path', 'title', 'clentcher', 'img', 'category', 'postedAt']).find())
+const { data: posts } = await useAsyncData('navigation', () => queryContent('').only(['_path', 'title', 'clentcher', 'img', 'category', 'postedAt']).sort({ 'postedAt': -1 }).find())
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const { data: posts } = await useAsyncData('navigation', () => queryContent('').
                    <h3 class="title is-3 mo-0">
                       {{ listItems.title || 'failed to load' }}
                    </h3>
-                   <i>{{ new Date(listItems.postedAt).toDateString() }}</i>
+                   <i>{{ new Date(`${listItems.postedAt}`).toDateString() }}</i>
                    <h6 class="title is-6 mt-0" style="font-weight: normal">
                       {{ listItems.clentcher || 'failed to load' }}
                    </h6>
