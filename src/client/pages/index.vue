@@ -1,8 +1,10 @@
 <template>
     <div class="layout-container">
-        <HomeHero></HomeHero>
-        <OurTeam></OurTeam>
-        <Pricing></Pricing>
+        <PublicHomeHero></PublicHomeHero>
+        <PublicHomeAbout></PublicHomeAbout>
+        <Countdown></Countdown>
+        <PublicOurTeam></PublicOurTeam>
+        <PublicPricing></PublicPricing>
     </div>
 </template>
 
