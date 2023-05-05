@@ -10,10 +10,10 @@ server.get('/', (req, res) => {
     res.send({"status": "200"})
 })
 
-server.get('/student/:username', (req, res) => {
+server.get('/student/:user', (req, res) => {
     res.send({
         "status": "200",
-        "userName": req.params.username
+        "userName": req.params.user
     })
 })
 
