@@ -17,10 +17,10 @@ server.get('/student/:username', (req, res) => {
     })
 })
 
-server.get('/class/:classname', (req, res) => {
+server.get('/class/:myclass', (req, res) => {
     res.send({
         "status": "200",
-        "clasName": req.params.classname
+        "clasName": req.params.myclass
     })
 })
 
