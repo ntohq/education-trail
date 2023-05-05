@@ -24,10 +24,10 @@ server.get('/class/:classname', (req, res) => {
     })
 })
 
-server.get('/class/:classname/syllabus/', (req, res) => {
+server.get('/class/student/:id', (req, res) => {
     res.send({
         "status": "200",
-        "clasName": req.params.classname         
+        "studentid": req.params.id       
     })
 })
 
