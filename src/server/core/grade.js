@@ -1,7 +1,7 @@
-class Syllabus
+class Grade
 {
     constructor()
     {
-        
+
     }
 }
