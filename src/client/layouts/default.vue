@@ -1,30 +1,22 @@
 <template>
     <div>
-        <NavigationBar  :navigationRoutes="navigationLinks"/>
+        <NavBar></NavBar>
         <slot />
-        <NavigationFooter/>
+        <NavFooter></NavFooter>
     </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                navigationLinks: [
-                    {
-                        link: '/',
-                        name: 'Home'
-                    },
-                    {
-                        link: '/about',
-                        name: 'About Us'
-                    },
-                    {
-                        link: '/news',
-                        name: 'News'
-                    }
-                ]
-            }
+export default {
+    data() {
+        return {
+            navigationLinks: [
+                {
+                    link: '/',
+                    name: 'Home'
+                },
+            ]
         }
     }
+}
 </script>
