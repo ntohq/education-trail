@@ -2,27 +2,16 @@
   "name": "server",
   "version": "1.0.0",
   "type": "module",
-  "main": "app.js",
+  "main": "server.js",
   "author": "Wesley Ford <wes@wesdev.pro>",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "axios": "^0.27.2",
-    "body-parser": "^1.20.0",
-    "connect-mongo": "^4.6.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "express-handlebars": "^6.0.6",
-    "express-session": "^1.17.3",
-    "googleapis": "^105.0.0",
-    "mongo": "^0.1.0",
-    "mongodb": "^4.7.0",
-    "mongoose": "^6.4.6",
-    "nodemon": "^2.0.18"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
   },
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon server.js"
   }
 }
