@@ -18,6 +18,7 @@
 	<!-- Build the final assets -->
 	<Target Name="ViteBuild" BeforeTargets="BeforeBuild" Condition=" '$(Configuration)' == 'Release' ">
 		<!-- Build the final assets -->
+		<Exec Command="npm install" />
 		<Exec Command="npm run build" />
 	</Target>
 	<ItemGroup>
