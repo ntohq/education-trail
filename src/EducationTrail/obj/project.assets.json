@@ -1,0 +1,146 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Vite.AspNetCore/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Vite.AspNetCore.Abstractions": "1.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Vite.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Vite.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Vite.AspNetCore.Abstractions/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Vite.AspNetCore.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Vite.AspNetCore.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vite.AspNetCore/1.6.2": {
+      "sha512": "X5LqJH8kPvyv5/cJh94pRuMDJxTSRvQ4yV9IT+CCopjBCOWXw7UoO4lnWUrYiuOyO9CXu3wvmOBYH8jo9JwzJw==",
+      "type": "package",
+      "path": "vite.aspnetcore/1.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net6.0/Vite.AspNetCore.dll",
+        "vite.aspnetcore.1.6.2.nupkg.sha512",
+        "vite.aspnetcore.nuspec",
+        "vite.png"
+      ]
+    },
+    "Vite.AspNetCore.Abstractions/1.0.1": {
+      "sha512": "ob0O48nIxsj6Pu3ESShRYU7Sgapaub9Lgd3yOV9IsKscwzhCRqWbm3WBSksZuYjFUvdUdZpuIn2QoozhO/Nhqg==",
+      "type": "package",
+      "path": "vite.aspnetcore.abstractions/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/Vite.AspNetCore.Abstractions.dll",
+        "vite.aspnetcore.abstractions.1.0.1.nupkg.sha512",
+        "vite.aspnetcore.abstractions.nuspec",
+        "vite.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Vite.AspNetCore >= 1.6.2",
+      "Vite.AspNetCore.Abstractions >= 1.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\wesdevpro\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\GitHub\\education-trail\\src\\EducationTrail\\EducationTrail.csproj",
+      "projectName": "EducationTrail",
+      "projectPath": "E:\\GitHub\\education-trail\\src\\EducationTrail\\EducationTrail.csproj",
+      "packagesPath": "C:\\Users\\wesdevpro\\.nuget\\packages\\",
+      "outputPath": "E:\\GitHub\\education-trail\\src\\EducationTrail\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\wesdevpro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Vite.AspNetCore": {
+            "target": "Package",
+            "version": "[1.6.2, )"
+          },
+          "Vite.AspNetCore.Abstractions": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

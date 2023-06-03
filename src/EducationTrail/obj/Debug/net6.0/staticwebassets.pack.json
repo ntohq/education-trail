@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\GitHub\\education-trail\\src\\EducationTrail\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EducationTrail.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EducationTrail.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\GitHub\\education-trail\\src\\EducationTrail\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\GitHub\\education-trail\\src\\EducationTrail\\wwwroot\\images\\education_trail_emblem.png",
+      "PackagePath": "staticwebassets\\images\\education_trail_emblem.png"
+    },
+    {
+      "Id": "E:\\GitHub\\education-trail\\src\\EducationTrail\\wwwroot\\images\\theherostrail.jpg",
+      "PackagePath": "staticwebassets\\images\\theherostrail.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EducationTrail.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.EducationTrail.props",
+      "PackagePath": "build\\EducationTrail.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.EducationTrail.props",
+      "PackagePath": "buildMultiTargeting\\EducationTrail.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.EducationTrail.props",
+      "PackagePath": "buildTransitive\\EducationTrail.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
