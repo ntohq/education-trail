@@ -1,14 +1,14 @@
 name: Build and deploy .NET Core application to Web App EducationTrailApp
 on:
-  push:
+  pull_request:
     branches:
-    - ToASP.NET_MVC
+    - main
 env:
   AZURE_WEBAPP_NAME: EducationTrailApp
   AZURE_WEBAPP_PACKAGE_PATH: .\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
-  WORKING_DIRECTORY: .
+  WORKING_DIRECTORY: ./src/EducationTrail
 jobs:
   build:
     runs-on: windows-latest
