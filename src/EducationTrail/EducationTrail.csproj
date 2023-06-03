@@ -18,7 +18,7 @@
 	<!-- Build the final assets -->
 	<Target Name="ViteBuild" BeforeTargets="BeforeBuild" Condition=" '$(Configuration)' == 'Release' ">
 		<!-- Build the final assets -->
-		<Exec Command="yarn run build" />
+		<Exec Command="npm run build" />
 	</Target>
 	<ItemGroup>
 		<PackageReference Include="Vite.AspNetCore" Version="1.6.2" />
