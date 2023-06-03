@@ -12,4 +12,5 @@
 </div>
 Education path is an open-source web app that helps students track their progress in their classes and their GPA, but ultimately their success.
 
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/ntohq/education-trail/EducationTrailApp.yml)
 ![GitHub](https://img.shields.io/github/license/ntohq/education-path)
