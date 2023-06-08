@@ -22,6 +22,7 @@
 		<Exec Command="npm run build" />
 	</Target>
 	<ItemGroup>
+		<PackageReference Include="MongoDB.Driver" Version="2.19.2" />
 		<PackageReference Include="Vite.AspNetCore" Version="1.6.2" />
 		<PackageReference Include="Vite.AspNetCore.Abstractions" Version="1.0.1" />
 	</ItemGroup>
