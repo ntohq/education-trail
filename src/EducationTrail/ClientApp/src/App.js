@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AppRoutes from './AppRoutes';
-import { Layout } from './components/Layout';
+import { Layout } from './layouts/Layout';
 import './App.css';
 
 export default class App extends Component {
