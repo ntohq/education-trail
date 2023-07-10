@@ -1,46 +1,43 @@
-import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import './NavMenu.css';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "../assets/css/NavMenu.css";
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
 
-  constructor (props) {
-    super(props);
-
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-    this.state = {
-      collapsed: true
-    };
-  }
-
-  toggleNavbar () {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  }
-
   render() {
     return (
       <header>
-        <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" container light>
-          <NavbarBrand tag={Link} to="/">EducationTrail</NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
-            <ul className="navbar-nav flex-grow">
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
-              </NavItem>
+        <navbar className="navbar bg-base-100">
+          <div className="flex-1">
+            <a
+              className="btn btn-ghost normal-case text-xl"
+              tag={Link}
+              href="/"
+            >
+              EducationTrail
+            </a>
+          </div>
+          <div className="flex-none">
+            <ul className="menu menu-horizontal px-1">
+              <li>
+                <a tag={Link} className="text-dark" href="/">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a tag={Link} className="text-dark" href="/counter">
+                  Counter
+                </a>
+              </li>
+              <li>
+                <a tag={Link} className="text-dark" href="/fetch-data">
+                  Fetch data
+                </a>
+              </li>
             </ul>
-          </Collapse>
-        </Navbar>
+          </div>
+        </navbar>
       </header>
     );
   }
