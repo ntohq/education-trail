@@ -20,8 +20,7 @@ export class NavMenu extends Component {
               </div>
               <h3 class="hidden sm:block">The Education Trail</h3>
             </a>
-          </div>
-          <div className="flex-none">
+            <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
               <li>
                 <a tag={Link} className="text-dark" href="/">
@@ -39,6 +38,7 @@ export class NavMenu extends Component {
                 </a>
               </li>
             </ul>
+          </div>
           </div>
         </navbar>
       </header>
