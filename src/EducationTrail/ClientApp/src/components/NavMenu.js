@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../assets/css/NavMenu.css";
+import EducationTrailEmblem from '../assets/images/education_trail_emblem.png'
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -15,10 +15,12 @@ export class NavMenu extends Component {
               tag={Link}
               href="/"
             >
-              EducationTrail
+              <div class="w-10 rounded-full">
+                <img src={EducationTrailEmblem} alt="The education trail's emblem."/>
+              </div>
+              <h3 class="hidden sm:block">The Education Trail</h3>
             </a>
-          </div>
-          <div className="flex-none">
+            <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
               <li>
                 <a tag={Link} className="text-dark" href="/">
@@ -36,6 +38,7 @@ export class NavMenu extends Component {
                 </a>
               </li>
             </ul>
+          </div>
           </div>
         </navbar>
       </header>
