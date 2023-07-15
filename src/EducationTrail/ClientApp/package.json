@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "http-proxy-middleware": "^2.0.6",
     "jquery": "^3.6.0",
     "merge": "^2.1.1",
@@ -27,6 +28,8 @@
     "workbox-streams": "^6.5.3"
   },
   "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.1.0",
+    "@iconify/json": "^2.2.90",
     "ajv": "^8.11.0",
     "cross-env": "^7.0.3",
     "daisyui": "^3.1.9",
