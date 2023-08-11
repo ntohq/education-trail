@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HomeLayout } from "../layouts/HomeLayout"
 
 export class Counter extends Component {
   static displayName = Counter.name;
@@ -17,7 +18,7 @@ export class Counter extends Component {
 
   render() {
     return (
-      <div>
+      <HomeLayout>
         <h1>Counter</h1>
 
         <p>This is a simple example of a React component.</p>
@@ -25,7 +26,7 @@ export class Counter extends Component {
         <p aria-live="polite">Current count: <strong>{this.state.currentCount}</strong></p>
 
         <button class="btn btn-outline btn-primary" onClick={this.incrementCounter}>Increment</button>
-      </div>
+      </HomeLayout>
     );
   }
 }
