@@ -6,7 +6,6 @@ export class NavMenu extends Component {
 
   render() {
     return (
-      <header>
         <navbar class="navbar bg-base-100">
           {/* navbar container right */}
           <div class="navbar-start">
@@ -54,7 +53,6 @@ export class NavMenu extends Component {
             </div>
           </div>
         </navbar>
-      </header>
     );
   }
 }
