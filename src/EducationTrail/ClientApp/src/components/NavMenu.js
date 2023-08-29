@@ -18,6 +18,7 @@ export class NavMenu extends Component {
                   <img
                     src={EducationTrailEmblem}
                     alt="The education trail's emblem."
+                    className="mask mask-circle shadow-xl"
                   />
                 </div>
                 <h3 class="hidden sm:block">The Education Trail</h3>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EducationTrailEmblem from "../assets/images/education_trail_emblem.png";
+import EducationTrailEmblem from "../assets/images/coffee-bear.png";
 
 export class NavFooter extends Component {
   static displayName = NavFooter.name;
@@ -8,12 +8,14 @@ export class NavFooter extends Component {
     return (
       <footer className="footer footer-center p-10 bg-primary text-primary-content">
         <div>
-          <img src={EducationTrailEmblem} width="50" height="50" alt="The Education Trail Emblem"/>
+          <figure className="">
+            <img src={EducationTrailEmblem} className="mask mask-heart" width="60" height="50" alt="The Education Trail Emblem"/>
+          </figure>
           <p className="font-bold">
             The Education Trail <br />
 
           </p>
-          <p>Copyright © 2023 - All right reserved</p>
+          <p>Copyright © 2023 - All rights reserved</p>
         </div>
         <div>
           <div className="grid grid-flow-col gap-4">
