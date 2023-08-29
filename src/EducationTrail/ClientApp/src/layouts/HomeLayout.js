@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavMenu } from '../components/NavMenu';
+import { NavFooter } from '../components/NavFooter'
 
 export class HomeLayout extends Component {
   static displayName = HomeLayout.name;
@@ -11,6 +12,7 @@ export class HomeLayout extends Component {
         <div class="container">
           {this.props.children}
         </div>
+        <NavFooter />
       </div>
     );
   }

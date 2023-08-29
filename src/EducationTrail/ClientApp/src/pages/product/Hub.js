@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ProductLayout } from "../layouts/ProductLayout"
+import { ProductLayout } from "../../layouts/ProductLayout"
 
 export class Hub extends Component {
   static displayName = Hub.name;

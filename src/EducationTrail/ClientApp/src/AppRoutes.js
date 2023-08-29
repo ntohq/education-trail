@@ -1,7 +1,8 @@
 import { Counter } from "./pages/Counter";
 import { Home } from "./pages/Home";
-import { Hub } from "./pages/Hub";
+import { Hub } from "./pages/product/Hub";
 import { Login } from "./pages/Login";
+import { Signup } from "./pages/Signup";
 
 const AppRoutes = [
   {
@@ -19,6 +20,10 @@ const AppRoutes = [
   {
     path: 'login',
     element: <Login />
+  },
+  {
+    path: 'signup',
+    element: <Signup />
   }
 ];
 
