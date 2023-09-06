@@ -11,7 +11,7 @@ module.exports = {
     require("daisyui"),
     iconsPlugin({
       // Select the icon collections you want to use
-      collections: getIconCollections(["mdi", "fa-solid"]),
+      collections: getIconCollections(["mdi", "ic", "fa-solid"]),
     }),
   ],
   daisyui: {
