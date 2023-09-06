@@ -6,7 +6,7 @@ export class NavMenu extends Component {
 
   render() {
     return (
-        <navbar class="navbar bg-base-100">
+        <nav class="navbar bg-base-100">
           {/* navbar container right */}
           <div class="navbar-start">
             <div class="navbrand">
@@ -25,7 +25,7 @@ export class NavMenu extends Component {
               </a>
             </div>
             {/* navbar navigation */}
-            <div class="">
+            <div className="hidden w-full md:flex md:items-center md:w-auto">
               <ul className="menu menu-horizontal px-1">
                 <li>
                   <a className="text-dark" href="/">
@@ -47,13 +47,13 @@ export class NavMenu extends Component {
 
             </div>
             {/* mobile navburger */}
-            <div class="m:hidden lg:hidden flex">
+            <div class="cursor-pointer md:hidden block">
               <button class="btn btn-ghost auto">
                 <span class="i-fa-solid-bars auto text-xl"></span>
               </button>
             </div>
           </div>
-        </navbar>
+        </nav>
     );
   }
 }
