@@ -10,7 +10,7 @@ on:
     branches: [ "dev", "main" ]
 
 env:
-  DOTNET_CORE_VERSION: 6.0.x
+  DOTNET_CORE_VERSION: 8.0.x
   WORKING_DIRECTORY: ./src/EducationTrail
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
