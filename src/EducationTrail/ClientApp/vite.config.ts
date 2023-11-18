@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 import { readFileSync } from 'fs'
 import { certFilePath, keyFilePath } from './aspnetcore-https'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
