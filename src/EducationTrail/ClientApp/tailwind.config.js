@@ -1,18 +1,22 @@
-const {
-  iconsPlugin,
-  getIconCollections,
-} = require("@egoist/tailwindcss-icons");
+const { iconsPlugin, getIconCollections } = require("@egoist/tailwindcss-icons")
+
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
   plugins: [
     require("@tailwindcss/typography"),
-    require("daisyui"),
     iconsPlugin({
       // Select the icon collections you want to use
       collections: getIconCollections(["mdi", "ic", "fa-solid"]),
     }),
+    require("daisyui"),
   ],
   daisyui: {
     themes: [
@@ -28,4 +32,5 @@ module.exports = {
       },
     ],
   },
-};
+}
+

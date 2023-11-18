@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
-export class ProductLayout extends Component {
-  static displayName = ProductLayout.name;
+export class Layout extends Component {
+  static displayName = Layout.name;
 
   render() {
     return (
       <div>
-        <div class="container">
+        <div className="container">
           {this.props.children}
         </div>
       </div>
     );
   }
 }
+
+export default Layout;

@@ -1,27 +1,27 @@
 import React, { Component } from "react";
-import EducationTrailEmblem from "../assets/images/education_trail_emblem.png";
+import EducationTrailEmblem from "@assets/images/education_trail_emblem.png";
 
-export class NavMenu extends Component {
+class NavMenu extends Component {
   static displayName = NavMenu.name;
 
   render() {
     return (
-        <nav class="navbar bg-base-100">
+        <nav className="navbar bg-base-100">
           {/* navbar container right */}
-          <div class="navbar-start">
-            <div class="navbrand">
+          <div className="navbar-start">
+            <div className="navbrand">
               <a
                 className="btn btn-ghost normal-case text-xl"
                 href="/"
               >
-                <div class="w-10 rounded-full">
+                <div className="w-10 rounded-full">
                   <img
                     src={EducationTrailEmblem}
                     alt="The education trail's emblem."
                     className="mask mask-circle shadow-xl"
                   />
                 </div>
-                <h3 class="hidden sm:block">The Education Trail</h3>
+                <h3 className="hidden sm:block">The Education Trail</h3>
               </a>
             </div>
             {/* navbar navigation */}
@@ -41,15 +41,15 @@ export class NavMenu extends Component {
             </div>
           </div>
           {/* navbar end */}
-          <div class="navbar-end">
+          <div className="navbar-end">
             {/* search? login? */}
             <div>
 
             </div>
             {/* mobile navburger */}
-            <div class="cursor-pointer md:hidden block">
-              <button class="btn btn-ghost auto">
-                <span class="i-fa-solid-bars auto text-xl"></span>
+            <div className="cursor-pointer md:hidden block">
+              <button className="btn btn-ghost auto">
+                <span className="i-fa-solid-bars auto text-xl"></span>
               </button>
             </div>
           </div>
@@ -57,3 +57,5 @@ export class NavMenu extends Component {
     );
   }
 }
+
+export default NavMenu;
