@@ -9,7 +9,7 @@ export class HomeLayout extends Component {
     return (
       <div>
         <NavMenu />
-        <div class="container">
+        <div className="container">
           {this.props.children}
         </div>
         <NavFooter />
