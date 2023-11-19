@@ -38,9 +38,10 @@ jobs:
 
       - name: Rename Certificate and Key Files
         run: |
-          mkdir -p ~/.aspnet/https
-          mv ~/.aspnet/https/localhost.crt ~/.aspnet/https/react-ts.pem || true
-          mv ~/.aspnet/https/localhost.key ~/.aspnet/https/react-ts.key || true
+          mkdir -p ./.aspnet/https
+          mv ./.aspnet/https/localhost.crt ./.aspnet/https/react-ts.pem || true
+          mv ./.aspnet/https/localhost.key ./.aspnet/https/react-ts.key || true
+        working-directory: ${{ github.workspace }}
         
       - name: Test vite+react Project
         run: | 
