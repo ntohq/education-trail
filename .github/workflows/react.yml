@@ -38,9 +38,10 @@ jobs:
 
       - name: Rename Certificate and Key Files
         run: |
+          mkdir -p ~/.aspnet/https
           mv ~/.aspnet/https/localhost.crt ~/.aspnet/https/react-ts.pem
           mv ~/.aspnet/https/localhost.key ~/.aspnet/https/react-ts.key
-
+        
       - name: Test vite+react Project
         run: | 
           npm ci --prefix "${{ env.WORKING_DIRECTORY }}"
