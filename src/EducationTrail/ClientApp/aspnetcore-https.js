@@ -39,6 +39,9 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
   .on('exit', (code) => process.exit(code));
 }
 
+console.log(certFilePath);
+console.log(keyFilePath);
+
 module.exports = {
   certFilePath,
   keyFilePath
