@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AppRoutes from './AppRoutes';
-import './assets/css/core.css';
 
-export default class App extends Component {
+class App extends Component {
   static displayName = App.name;
 
   render() {
@@ -17,3 +16,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default App;

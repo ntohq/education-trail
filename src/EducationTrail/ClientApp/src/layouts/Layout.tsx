@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { NavMenu } from '../components/NavMenu';
-import { NavFooter } from '../components/NavFooter'
-import '../assets/css/Layout.css'
+import NavMenu from '@components/NavMenu';
+import NavFooter from '@components/NavFooter'
+import '@assets/css/Layout.css'
 
 export class Layout extends Component {
   static displayName = Layout.name;
@@ -10,7 +10,7 @@ export class Layout extends Component {
     return (
       <div>
         <NavMenu />
-        <div class="container page-wrapper">
+        <div className="container page-wrapper">
           {this.props.children}
         </div>
         <NavFooter />
@@ -18,3 +18,6 @@ export class Layout extends Component {
     );
   }
 }
+
+
+export default Layout;

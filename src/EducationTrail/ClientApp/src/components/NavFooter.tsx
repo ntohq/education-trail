@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import EducationTrailEmblem from "../assets/images/coffee-bear.png";
 
-export class NavFooter extends Component {
+class NavFooter extends Component {
   static displayName = NavFooter.name;
 
   render() {
@@ -34,3 +34,5 @@ export class NavFooter extends Component {
     );
   }
 }
+
+export default NavFooter;

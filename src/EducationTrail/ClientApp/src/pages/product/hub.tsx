@@ -1,8 +1,13 @@
 import React, { Component } from "react";
-import { ProductLayout } from "../../layouts/ProductLayout"
+import ProductLayout from "@layouts/ProductLayout"
 
 export class Hub extends Component {
   static displayName = Hub.name;
+
+  componentDidMount() {
+    document.title = Hub.name + " - Education Trail";
+  }
+
   render() {
     return (
       <ProductLayout>
@@ -11,3 +16,5 @@ export class Hub extends Component {
     );
   }
 }
+
+export default Hub;
