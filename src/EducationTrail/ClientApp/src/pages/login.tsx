@@ -4,7 +4,7 @@ export class Login extends Component {
   static displayName = Login.name;
 
   componentDidMount() {
-    document.title = Login.name + " - Education Trail";
+    document.title = "Login - Education Trail";
   }
 
   render() {

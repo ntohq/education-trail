@@ -4,7 +4,7 @@ export class Signup extends Component {
   static displayName = Signup.name;
 
   componentDidMount() {
-    document.title = Signup.name + " - Education Trail";
+    document.title = "Signup - Education Trail";
   }
 
   render() {

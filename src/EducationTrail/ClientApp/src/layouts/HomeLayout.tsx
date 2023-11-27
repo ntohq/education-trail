@@ -13,9 +13,7 @@ class HomeLayout extends Component<LayoutProps> {
     return (
       <div>
         <NavMenu />
-        <div className="container">
           {this.props.children}
-        </div>
         <NavFooter />
       </div>
     );
