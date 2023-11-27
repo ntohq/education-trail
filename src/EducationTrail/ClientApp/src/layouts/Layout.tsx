@@ -3,7 +3,11 @@ import NavMenu from '@components/NavMenu';
 import NavFooter from '@components/NavFooter'
 import '@assets/css/Layout.css'
 
-export class Layout extends Component {
+export interface LayoutProps  { 
+  children: React.ReactNode
+}
+
+export class Layout extends Component<LayoutProps> {
   static displayName = Layout.name;
 
   render() {

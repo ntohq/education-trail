@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
-export class ProductLayout extends Component {
+export interface LayoutProps  { 
+  children: React.ReactNode
+}
+
+export class ProductLayout extends Component<LayoutProps> {
   static displayName = ProductLayout.name;
 
   render() {
