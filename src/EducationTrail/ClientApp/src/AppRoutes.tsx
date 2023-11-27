@@ -4,7 +4,7 @@ import Test from "@pages/test";
 import Hub from "@pages/product/hub";
 import Login from "@pages/login";
 import Signup from "@pages/signup";
-
+import NotFound from "@pages/404";
 
 const AppRoutes = [
   {
@@ -30,6 +30,10 @@ const AppRoutes = [
   {
     path: '/signup',
     element: <Signup />
+  },
+  {
+    path: '*',
+    element: <NotFound/>
   }
 ];
 
