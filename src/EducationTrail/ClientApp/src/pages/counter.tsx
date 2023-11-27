@@ -16,7 +16,7 @@ export class Counter extends Component<{}, CounterState> {
   }
 
   componentDidMount() {
-    document.title =  Counter.name + " - Education Trail";
+    document.title =  "Counter - Education Trail";
   }
 
   incrementCounter() {

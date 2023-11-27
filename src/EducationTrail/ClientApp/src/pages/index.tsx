@@ -5,7 +5,7 @@ export class Home extends Component {
   static displayName = Home.name;
 
   componentDidMount() {
-    document.title = Home.name + " - Education Trail";
+    document.title = "Home - Education Trail";
   }
 
   render() {
