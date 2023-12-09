@@ -10,10 +10,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-if(app.Environment.IsProduction()) 
+if (app.Environment.IsProduction())
 {
-    app.UseStaticFiles();  
+    app.UseStaticFiles();
     app.MapFallbackToFile("index.html");
 }
 
 app.Run();
+
